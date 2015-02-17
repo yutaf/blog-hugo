@@ -6,9 +6,25 @@ title = "phpbrew memo"
 
 ローカル開発環境に phpenv + php-build を使っていたが、[phpbrew](https://github.com/phpbrew/phpbrew) のほうが簡単そうだったので移行した。
 
-**environment**
+#### environment
 
 * osx 10.9.5
+* Apache/2.2.29
+* mysql 5.6.15
+
+#### メリット
+
+* apache の php モジュールをバージョン毎に保存してくれる。
+* ちゃんと動く pcre ライブラリが入る。  
+今回、apache とともに php をソースからビルドすることも試したが、ビルド時に両方で指定した brew インストールの pcre ライブラリが apache の php モジュールには正しくリンクされず、違うバージョン(apache 同梱のもの?)になっていた。  
+結果、preg_replace が動作しなかった。  
+その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、phpbrew はその点を補ってくれる。  
+
+#### デメリット
+
+* 使用するのに php5.3 以上が必要
+* php のバージョン切り替えで挙動が不安定な時がある
+* configure option を variants という独自の仕組みで指定する。(通常の指定のみでもビルドできるが、variants を使ったほうが良い部分がある)
 
 ## Requirement
 
@@ -99,13 +115,13 @@ $ phpbrew init -c=/path/to/config.yaml
 $ phpbrew -d install 5.4.36 +dev
 ```
 
-#### 最終的に辿り着いた設定方法
+#### 最終的に辿り着いたインストール方法
 
 ```
 $ phpbrew -d install 5.4.36 +neutral +apxs2=/opt/apache2.2.29/bin/apxs +dev
 ```
 `+neutral` を指定しないと `--disable-all` 等のオプションが自動的に設定される。  
-`--disable-all` は phpのデフォルトで有効な json や xml モジュール等が無効になるので、これらの関数が動かなくなり困った。  
+`--disable-all` は phpのデフォルトで有効な json や xml モジュール等が無効になるので、これらの関数が使用できなくなる。  
 
 `'+apxs2'` は apache の php モジュールをバージョン毎に管理する為に必須(後述)。
 
@@ -125,7 +141,7 @@ $ phpbrew ext install +dev
 
 ## apache のphpモジュール切り替え
 
-variants の `apxs2` を設定すると各バージョンごとにモジュールを保存し、
+variants の `+apxs2` を設定すると各バージョンごとにモジュールを保存し、
 httpd.conf に `LoadModule php5_module ...` の記述がされる。
 
 <https://github.com/phpbrew/phpbrew/wiki/Cookbook#apache2-support>
@@ -174,8 +190,6 @@ LoadModule php5_module        modules/libphp5.4.36.so
 ```
 $ sudo apachectl graceful
 ```
-
 ## 感想
 
-pcre ライブラリが apache のものとの衝突を気にしないでビルドできるのはいいと思った。  
-面倒なところが多いが、とりあえず動いているので使っていこうと思う。
+気持ち悪い所も多いが、osx でphpをビルドするならこれが一番楽な気がした。
