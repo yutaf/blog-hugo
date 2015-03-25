@@ -5,6 +5,7 @@ title = "phpbrew memo"
 +++
 
 ローカル開発環境に phpenv + php-build を使っていたが、[phpbrew](https://github.com/phpbrew/phpbrew) のほうが簡単そうだったので移行した。
+<!--more-->
 
 #### environment
 
