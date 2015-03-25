@@ -44,7 +44,7 @@ $ mv phpbrew /usr/local/bin/
 
 ## configure option の設定と php のインストール
 
-configure option は variants という独自の指定方法がある。
+phpbrew には variants という独自の configure option の指定方法がある。
 
 ```
 $ phpbrew install 5.3.10 +pdo +mysql +pgsql +apxs2=/usr/bin/apxs2
@@ -56,13 +56,17 @@ variants の一覧は以下のコマンドで確認可能。
 $ phpbrew variants
 ```
 
-variants の良いところは、特に osx で失敗しがちな configure オプションのビルドをうまくやってくれるところだ。  
-例えば、pcre は apache 経由でphpを動かした時と cli で動かしたときに違うバージョンにリンクしてしまっていることがあり、preg_replace がまともに動作しないことがある。  
-しかし、この variants を使って pcre を指定すれば、ちゃんと動く pcre ライブラリが入る。  
+variants の良いところは、 osx で失敗しがちな configure オプションのビルドをうまくやってくれるところだ。  
+例えば、pcre は php の cli で動くライブラリと apache モジュールで動くライブラリを同じものにするには php, apache それぞれのビルド時に同じ pcre ライブラリを指定しなければならない。  
+特に apache には pcre ライブラリが同梱されているので、指定をしないとこの同梱のものが使われ、古くてまともに動かなかったりする。  
+さらに、 osx ではちゃんと指定しても正しくライブラリが設定されないことがあり、ハマるポイントのひとつだ。  
+
+しかし、この variants を使って pcre を指定すれば、apache モジュールと php cli で同じバージョンのちゃんと動く pcre ライブラリが入る。  
 その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、それもうまく補ってくれる。  
 
+<br>
 
-通常の configure option と同じ記述もできる。
+ちなみに、`--` に続けて書けば通常の configure option の記述が有効になる。
 
 ```
 $ phpbrew install 5.3.10 +mysql +sqlite -- \
