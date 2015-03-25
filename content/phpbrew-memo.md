@@ -62,11 +62,10 @@ variants の良いところは、 osx で失敗しがちな configure オプシ�
 さらに、 osx ではちゃんと指定しても正しくライブラリが設定されないことがあり、ハマるポイントのひとつだ。  
 
 しかし、この variants を使って pcre を指定すれば、apache モジュールと php cli で同じバージョンのちゃんと動く pcre ライブラリが入る。  
-その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、それもうまく補ってくれる。  
-
 <br>
-
-ちなみに、`--` に続けて書けば通常の configure option の記述が有効になる。
+その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、それもうまく補ってくれる。  
+<br>
+ちなみに、`--` に続けて書けば通常の configure option の記述が有効になる。  
 
 ```
 $ phpbrew install 5.3.10 +mysql +sqlite -- \
