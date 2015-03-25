@@ -1,3 +1,12 @@
 baseurl = "http://yutaf.github.io/"
 languageCode = "en-us"
 title = "yutaf blog"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright Yuta Fujishiro"
+
+[params]
+    # Social accounts. Link to these accounts are displayed in the header and
+    # footer.
+    twitter = "janjonjan"
+    github = "yutaf"
+    author = "Yuta Fujishiro"
