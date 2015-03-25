@@ -144,9 +144,10 @@ $ phpbrew -d install 5.4.36 +neutral +apxs2=/opt/apache2.2.29/bin/apxs +dev
 $ phpbrew switch php-5.4.36
 ```
 
-## xdebug インストール
+## extension のインストール
 
-上の yaml ファイル の extensions のところに記述してある variants を指定してインストールできる。
+xdebug などの extension も yaml ファイル に独自の variants を記述してインストールできる。  
+（上のyaml を参照。）
 
 ```
 $ phpbrew ext install +dev
