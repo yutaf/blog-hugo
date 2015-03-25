@@ -16,16 +16,16 @@ title = "phpbrew memo"
 #### メリット
 
 * apache の php モジュールをバージョン毎に保存してくれる。
-* ちゃんと動く pcre ライブラリが入る。  
-今回、apache とともに php をソースからビルドすることも試したが、ビルド時に両方で指定した brew インストールの pcre ライブラリが apache の php モジュールには正しくリンクされず、違うバージョン(apache 同梱のもの?)になっていた。  
-結果、preg_replace が動作しなかった。  
-その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、phpbrew はその点を補ってくれる。  
+* configure オプションのコンパイルが楽になる（特にosx）
+  * pcre
+  * --enable-intl  
+  など。
 
 #### デメリット
 
 * 使用するのに php5.3 以上が必要
+* configure option を variants という独自の仕組みで指定する。
 * php のバージョン切り替えで挙動が不安定な時がある
-* configure option を variants という独自の仕組みで指定する。(通常の指定のみでもビルドできるが、variants を使ったほうが良い部分がある)
 
 ## Requirement
 
@@ -44,13 +44,25 @@ $ mv phpbrew /usr/local/bin/
 
 ## configure option の設定と php のインストール
 
-variants という仕組みを利用して configure option を設定し、インストールする。
+configure option は variants という独自の指定方法がある。
 
 ```
 $ phpbrew install 5.3.10 +pdo +mysql +pgsql +apxs2=/usr/bin/apxs2
 ```
 
-通常の configure option の記述をする場合
+variants の一覧は以下のコマンドで確認可能。
+
+```
+$ phpbrew variants
+```
+
+variants の良いところは、特に osx で失敗しがちな configure オプションのビルドをうまくやってくれるところだ。  
+例えば、pcre は apache 経由でphpを動かした時と cli で動かしたときに違うバージョンにリンクしてしまっていることがあり、preg_replace がまともに動作しないことがある。  
+しかし、この variants を使って pcre を指定すれば、ちゃんと動く pcre ライブラリが入る。  
+その他にも `--enable-intl` など linux に比べて osx では php のビルドがまともにいかないことが多いが、それもうまく補ってくれる。  
+
+
+通常の configure option と同じ記述もできる。
 
 ```
 $ phpbrew install 5.3.10 +mysql +sqlite -- \
@@ -116,7 +128,7 @@ $ phpbrew init -c=/path/to/config.yaml
 $ phpbrew -d install 5.4.36 +dev
 ```
 
-#### 最終的に辿り着いたインストール方法
+#### 個人的ベストプラクティス
 
 ```
 $ phpbrew -d install 5.4.36 +neutral +apxs2=/opt/apache2.2.29/bin/apxs +dev
@@ -134,7 +146,7 @@ $ phpbrew switch php-5.4.36
 
 ## xdebug インストール
 
-上の yaml ファイルに記述してあるので、以下でインストールできる。
+上の yaml ファイル の extensions のところに記述してある variants を指定してインストールできる。
 
 ```
 $ phpbrew ext install +dev
