@@ -2,6 +2,7 @@
 date = "2015-03-25T23:11:48+09:00"
 draft = false
 title = "I made a deployment tool - ryogoku"
+tags = ["deploy", "bash", "ryogoku"]
 
 +++
 
@@ -68,6 +69,10 @@ Clone the repository from github, and
 $ make install
 ```
 
+### How it works
+
+<img src="/images/ryogoku-01.png" class="image">
+
 ### Configuration
 
 `ryogoku.conf` を git レポジトリルートに作成し、以下の様な内容を書く。  
@@ -104,16 +109,12 @@ What directives in this configuration file means are
 * `umask` defines the file permissions.
 
 
-### Deployment
+### Execution
 
 ```
 $ ryogoku prod
 ```
 
-これで、`master` ブランチが `prod` で指定したホストにデプロイされる。
+これで、master リビジョンが prod で指定したホストにデプロイされる。  
 
-Thus `master` revision is deployed to the hosts defined in `prod` section.
-
-### How it works
-
-<img src="/images/ryogoku-01.png" class="image">
+`master` revision is deployed to the hosts defined in `prod` section by this command.  

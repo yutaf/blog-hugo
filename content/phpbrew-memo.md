@@ -1,6 +1,8 @@
 +++
 date = "2015-02-17T12:32:23+09:00"
+draft = false
 title = "phpbrew memo"
+tags = ["phpbrew", "php", "osx"]
 
 +++
 
