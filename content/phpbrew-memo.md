@@ -9,13 +9,13 @@ tags = ["phpbrew", "php", "osx"]
 ローカル開発環境に phpenv + php-build を使っていたが、[phpbrew](https://github.com/phpbrew/phpbrew) のほうが簡単そうだったので移行した。
 <!--more-->
 
-#### environment
+### environment
 
 * osx 10.9.5
 * Apache/2.2.29
 * mysql 5.6.15
 
-#### メリット
+### メリット
 
 * apache の php モジュールをバージョン毎に保存してくれる。
 * configure オプションのコンパイルが楽になる（特にosx）
@@ -23,7 +23,7 @@ tags = ["phpbrew", "php", "osx"]
   * --enable-intl  
   など。
 
-#### デメリット
+### デメリット
 
 * 使用するのに php5.3 以上が必要
 * configure option を variants という独自の仕組みで指定する。
@@ -46,7 +46,7 @@ $ mv phpbrew /usr/local/bin/
 
 ## configure option の設定と php のインストール
 
-phpbrew には variants という独自の configure option の指定方法がある。
+phpbrew には `variants` という独自の configure option の指定方法がある。
 
 ```
 $ phpbrew install 5.3.10 +pdo +mysql +pgsql +apxs2=/usr/bin/apxs2
@@ -58,24 +58,28 @@ variants の一覧は以下のコマンドで確認可能。
 $ phpbrew variants
 ```
 
-variants の良いところは、 osx で失敗しがちな configure オプションのビルドをうまくやってくれるところだ。  
-例えば、pcre は php の cli で動くライブラリと apache モジュールで動くライブラリを同じものにするには php, apache それぞれのビルド時に同じ pcre ライブラリを指定しなければならない。  
+variants を使うと、configure オプションによるビルドの失敗を上手く補ってくれるメリットがある。  
+例えば、`pcre` オプションは以下の様な失敗をしやすい。  
 
-また、 apache には pcre ライブラリが同梱されているので、指定しないと同梱のものが使われ、古くてまともに動かなかったりする。  
-さらに、 osx ではちゃんと指定しても正しくライブラリがリンクされないことがあり、かなりハマった経験がある。  
+* php の cli で動く pcre と apache モジュールで動く pcre のバージョンが違う
+* apache に同梱された pcre がリンクされて、そのバージョンが古くてまともに動かない
+* pcre ライブラリを指定しても、正しくリンクされない(個人的には osx でありました)
+
+結果として、`preg_replace` 等、preg 系関数がまともに動かなくなってしまうことがある。  
 
 しかし、この variants を使って pcre を指定すれば、apache モジュールと php cli で同じバージョンのちゃんと動く pcre ライブラリが入る。  
+これはかなりありがたい。  
 <br>
 `--enable-intl` もlinux に比べて osx では php のビルドがまともにいかないことが多いが、それもうまく補ってくれる。  
 <br>
-ちなみに、`--` に続けて書けば通常の configure option の記述が有効になる。  
+ちなみに、`--` に続けて書けば通常の configure option の記述も可能。  
 
 ```
 $ phpbrew install 5.3.10 +mysql +sqlite -- \
     --enable-ftp --apxs2=/opt/local/apache2/bin/apxs
 ```
 
-#### ファイルによる configure option の設定
+### ファイルによる variants の設定
 
 yamlファイルで独自の variants を設定できる。
 
@@ -134,7 +138,7 @@ $ phpbrew init -c=/path/to/config.yaml
 $ phpbrew -d install 5.4.36 +dev
 ```
 
-#### 個人的ベストプラクティス
+### 個人的ベストプラクティス
 
 ```
 $ phpbrew -d install 5.4.36 +neutral +apxs2=/opt/apache2.2.29/bin/apxs +dev
@@ -144,12 +148,6 @@ $ phpbrew -d install 5.4.36 +neutral +apxs2=/opt/apache2.2.29/bin/apxs +dev
 
 `'+apxs2'` は apache の php モジュールをバージョン毎に管理する為に必須(後述)。
 
-## php のバージョン切り替え
-
-```
-$ phpbrew switch php-5.4.36
-```
-
 ## extension のインストール
 
 xdebug などの extension も yaml ファイル に独自の variants を記述してインストールできる。  
@@ -157,6 +155,12 @@ xdebug などの extension も yaml ファイル に独自の variants を記述
 
 ```
 $ phpbrew ext install +dev
+```
+
+## php のバージョン切り替え
+
+```
+$ phpbrew switch php-5.4.36
 ```
 
 ## apache のphpモジュール切り替え
@@ -193,9 +197,7 @@ LoadModule php5_module        modules/libphp5.3.29.so
 ...
 ```
 
-##### バージョン切り替えの方法
-
-httpd.conf で使用するバージョンのモジュール以外をコメントアウトして apache を再起動する
+バージョンを切り替えるには httpd.conf で使用するバージョンのモジュール以外をコメントアウトして apache を再起動する
 
 ```apacheconf:/opt/apache2.2.29/conf/httpd.conf
 ...
@@ -210,6 +212,7 @@ LoadModule php5_module        modules/libphp5.4.36.so
 ```
 $ sudo apachectl graceful
 ```
+
 ## 感想
 
 気持ち悪い所も多いが、osx でphpをビルドするならこれが一番楽な気がした。
