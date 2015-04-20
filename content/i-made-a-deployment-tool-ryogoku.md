@@ -77,7 +77,7 @@ $ make install
 
 `ryogoku.conf` を git レポジトリルートに作成し、以下の様な内容を書く。  
 
-Create `ryogoku.conf` file which has content like below at the git repository root.  
+Create `ryogoku.conf` at the git repository root.  
 
 ```
 [prod]
