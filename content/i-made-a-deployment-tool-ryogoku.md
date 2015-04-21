@@ -84,7 +84,7 @@ Create `ryogoku.conf` at the git repository root.
 user rob
 host 128.199.170.128 128.199.244.193
 path /var/www/html
-ref origin/master
+ref master
 pre-rsync ./bin/pre-rsync
 post-deploy /var/www/html/bin/update.sh && /var/www/html/bin/update.prod.sh
 umask 002
@@ -137,5 +137,5 @@ $ ryogoku prod b7ea7b3
 $ ryogoku prod 1.1.2
 ```
 ```
-$ ryogoku prod origin/develop
+$ ryogoku prod develop
 ```
