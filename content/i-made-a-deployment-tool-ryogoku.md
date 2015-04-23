@@ -2,7 +2,7 @@
 date = "2015-03-25T23:11:48+09:00"
 draft = false
 title = "I made a deployment tool - ryogoku"
-tags = ["deploy", "bash", "ryogoku"]
+tags = ["deploy", "bash", "rsync"]
 
 +++
 
