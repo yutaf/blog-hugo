@@ -6,26 +6,20 @@ tags = ["music"]
 
 +++
 
-期待を裏切らない最高のエンターテインメント。  
 <!--more-->
 
-今回は2公演観に行くが、そのうちの一回目。  
-チケットは安くはないので、2回も行く必要なかったんじゃないかと思っていたが、  
-そんなことはなかった。  
+2公演観に行くうちの一回目。  
+チケットは安くはないので2回も行く必要なかったんじゃないかと思っていたが、そんなことはなかった!!
 
-ベテランのアーティストが当時の歌声を失ってライブでの魅力が失われてしまうことがあるけど、ポールはそういったことがない。  
-原曲のキーを落とさず歌う。
+最高にロックしていて素晴らしかった。
 
-バンドの演奏も素晴らしく、過去の名曲をパワフルに現在に蘇らせてくれる。  
-本当にロックしている。  
-特に "Let Me Roll It", "1985", "Hi, Hi, Hi" あたりでは、ブルースをほんのり含ませたポールのロックのかっこよさを十分に堪能できた。  
+そして、観客のノリの良さがライブを特別なものにしていた。  
+会場全体からのポールに対する愛の強さが半端じゃない。  
 
-そして、このコンサートを特別にしているのは、他では考えらないくらい観客のノリがよいこと。  
-会場全体からポールに対する愛を強く感じる。  
-ポールは最高の観客だと言っていたけど、嘘じゃないと思う。  
-実際にはイギリスやブラジルではもっとすごいのかもしれないけど、日本の観客も負けていないと信じたい。笑  
+個人的に一番良かった曲は "Maybe I'm Amazed"  
+2013年に聞けなかった "Jet" も聞けたので満足。  
 
-ライブを通して個人的に一番良かった曲は "Maybe I'm Amazed"
+月曜も楽しみ。
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/fOwcJJ7KZvk' frameborder='0' allowfullscreen></iframe></div>
 
@@ -39,43 +33,47 @@ tags = ["music"]
 
 <img src="/images/paul-03.jpg" class="image">
 
-《セットリスト》  
-1. エイト・デイズ・ア・ウィーク（ビートルズ）  
-2. セイヴ・アス（ソロ / 最新アルバム『NEW』より）  
-3. オール・マイ・ラヴィング（ビートルズ）  
-4. ジェット（ウイングス）  
-5. レット・ミー・ロール・イット（ウイングス）  
-6. ペイパーバック・ライター（ビートルズ）  
-7. マイ・ヴァレンタイン（ソロ）  
-8. 1985年（ウイングス）  
-9. ロング・アンド・ワインディング・ロード（ビートルズ）  
-10. 恋することのもどかしさ（ソロ）  
-11. 夢の人（ビートルズ）  
-12. 恋を抱きしめよう（ビートルズ）  
-13. アナザー・デイ（ソロ）  
-14. ホープ・フォー・ザ・フューチャー（ソロ / 最新曲）  
-15. アンド・アイ・ラヴ・ハー（ビートルズ）  
-16. ブラックバード（ビートルズ）  
-17. ヒア・トゥデイ（ソロ）  
-18. NEW（ソロ / 最新アルバム『NEW』より）  
-19. クイーニー・アイ（ソロ / 最新アルバム『NEW』より）  
-20. レディ・マドンナ（ビートルズ）  
-21. オール・トゥゲザー・ナウ（ビートルズ）  
-22. ラヴリー・リタ（ビートルズ）  
-23. エリナー・リグビー（ビートルズ）  
-24. ビーイング・フォー・ザ・ベネフィット・オブ・ミスター・カイト（ビートルズ）  
-25. サムシング（ビートルズ）  
-26. オブ・ラ・ディ、オブ・ラ・ダ（ビートルズ）  
-27. バンド・オン・ザ・ラン（ウイングス）  
-28. バック・イン・ザ・U.S.S.R.（意ビートルズ）  
-29. レット・イット・ビー（ビートルズ）  
-30. 007死ぬのは奴らだ（ウイングス）  
-31. ヘイ・ジュード（ビートルズ）  
-32. デイ・トリッパー（ビートルズ）  
-33. ハイ・ハイ・ハイ（ウイングス）  
-34. キャント・バイ・ミー・ラヴ（ビートルズ）  
-35. イエスタデイ（ビートルズ）  
-36. ヘルター・スケルター（ビートルズ）  
-37. ゴールデン・スランバー～キャリー・ザット・ウェイト～ジ・エンド（ビートルズ）  
+Set list  
+1.  Eight Days a Week (The Beatles song)  
+2.  Save Us  
+3.  All My Loving (The Beatles song)  
+4.  Jet (Wings song)  
+5.  Let Me Roll It (Wings song)  
+6.  Paperback Writer (The Beatles song)  
+7.  My Valentine  
+8.  Nineteen Hundred and Eighty-Five (Wings song)  
+9.  The Long and Winding Road (The Beatles song)  
+10. Maybe I'm Amazed  
+11. I've Just Seen a Face (The Beatles song)  
+12. We Can Work It Out (The Beatles song)  
+13. Another Day  
+14. Hope for the Future  
+15. And I Love Her (The Beatles song)  
+16. Blackbird (The Beatles song)  
+17. Here Today  
+18. New  
+19. Queenie Eye  
+20. Lady Madonna (The Beatles song)  
+21. All Together Now (The Beatles song)  
+22. Lovely Rita (The Beatles song)  
+23. Eleanor Rigby (The Beatles song)  
+24. Being for the Benefit of Mr. Kite! (The Beatles song)  
+25. Something (The Beatles song)  
+26. Ob-La-Di, Ob-La-Da (The Beatles song)  
+27. Band on the Run (Wings song)  
+28. Back in the U.S.S.R. (The Beatles song)  
+29. Let It Be (The Beatles song)  
+30. Live and Let Die (Wings song)  
+31. Hey Jude (The Beatles song)  
 
-Referred from <http://www.universal-music.co.jp/paul-mccartney/news/2015/04/25_report>  
+Encore:  
+32. Day Tripper (The Beatles song)  
+33. Hi, Hi, Hi (Wings song)  
+34. Can't Buy Me Love (The Beatles song)  
+
+Encore 2:  
+35. Yesterday (The Beatles song)  
+36. Helter Skelter (The Beatles song)  
+37. Golden Slumbers (The Beatles song)  
+38. Carry That Weight (The Beatles song)  
+39. The End (The Beatles song)  
