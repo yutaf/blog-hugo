@@ -27,13 +27,17 @@ tags = ["music"]
 
 ライブを通して個人的に一番良かった曲は "Maybe I'm Amazed"
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/fOwcJJ7KZvk" frameborder="0" allowfullscreen></iframe>
-<iframe width="720" height="405" src="https://www.youtube.com/embed/bZFyl52pFck" frameborder="0" allowfullscreen></iframe>
-<iframe width="720" height="405" src="https://www.youtube.com/embed/nFgAyTEqfzE" frameborder="0" allowfullscreen></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/fOwcJJ7KZvk' frameborder='0' allowfullscreen></iframe></div>
 
-<p><img src="/images/paul-01.jpg" class="image"></p>
-<p><img src="/images/paul-02.jpg" class="image"></p>
-<p><img src="/images/paul-03.jpg" class="image"></p>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/bZFyl52pFck' frameborder='0' allowfullscreen></iframe></div>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/nFgAyTEqfzE' frameborder='0' allowfullscreen></iframe></div>
+
+<img src="/images/paul-01.jpg" class="image">
+
+<img src="/images/paul-02.jpg" class="image">
+
+<img src="/images/paul-03.jpg" class="image">
 
 《セットリスト》  
 1. エイト・デイズ・ア・ウィーク（ビートルズ）  
