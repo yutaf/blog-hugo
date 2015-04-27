@@ -2,6 +2,7 @@
 date = "2015-04-07T22:42:50+09:00"
 draft = false
 title = "provisioning with itamae"
+tags = ["provisioning", "itamae"]
 
 +++
 
