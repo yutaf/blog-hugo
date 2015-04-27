@@ -7,13 +7,12 @@ title = "provisioning with itamae"
 
 I provisioned my company's webhook server with [itamae](https://github.com/itamae-kitchen/itamae) recently.  
 itamae is a *very simple* provisioning tool created by [cookpad](https://cookpad.com/en/categories/japanese-recipes) and formerly they called it as Lightchef.  
-I agree with its former name because it's not as complicatied as [Chef](https://www.chef.io/chef/).
+<!--more-->
 
 I have never used Chef and also other provisioning tools like Ansible.  
 But I could learn it for 2,3 hours and began to provision.  
 It is very easy to start provisioning with itamae.  
 I like it.  
-<!--more-->
 
 ## How to use it
 
