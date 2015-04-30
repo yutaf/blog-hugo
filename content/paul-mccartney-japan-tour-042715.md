@@ -13,10 +13,10 @@ tags = ["music"]
 父は1950年生まれで、ビートルズ世代。  
 親孝行。笑
 
-I went with my dad this time.  
+I went with my father this day.  
 Paul played "I Saw Her Standing There" !!  
 I danced to it.  
-It seemed my dad kept standing through the song.  
+My father never danced, but he seemed to enjoy it very much.  
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/VjzUWsgB4kk' frameborder='0' allowfullscreen></iframe></div>
 
