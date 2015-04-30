@@ -10,8 +10,8 @@ I provisioned my company's webhook server with [itamae](https://github.com/itama
 itamae is a *very simple* provisioning tool created by [cookpad](https://cookpad.com/en/categories/japanese-recipes) and formerly they called it as Lightchef.  
 <!--more-->
 
-I have never used Chef and also other provisioning tools like Ansible.  
-But I could learn it for 2,3 hours and began to provision.  
+I have never used provisioning tools like Chef or Ansible at all.  
+But I could learn itamae for 2,3 hours and began to provision.  
 It is very easy to start provisioning with itamae.  
 I like it.  
 
@@ -56,7 +56,7 @@ With that we can avoid unnecessary execution of recipes when we do it repeatedly
 
 - we can of course execute itamae locally not via ssh.  
 
-## More to it
+## More
 
 #### Including Recipes
 
@@ -74,7 +74,7 @@ include_recipe "add_webhook_script.rb"
 include_recipe "cron.rb"
 ```
 
-#### More recipes
+#### My other recipes
 
 `recipes/add_deploy_user.rb`
 
