@@ -1,7 +1,7 @@
 +++
 date = "2015-05-19T14:55:52+09:00"
 draft = false
-title = "php max_input_vars make you lost form values"
+title = "php max_input_vars makes you lose form values"
 tags = ["php"]
 
 +++
