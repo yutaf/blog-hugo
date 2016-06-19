@@ -8,7 +8,7 @@ tags = ["i18n", "php", "twig", "symfony"]
 
 <!--more-->
 
-It took me some hours to make it, Symfony validation component Internationalization.  
+It took me several hours to make it, Symfony validation component Internationalization.  
 The point is instantiation of `translator` and `validator`.  
 
 
