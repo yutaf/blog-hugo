@@ -2,7 +2,7 @@
 date = "2016-06-24T11:16:11+09:00"
 draft = false
 title = "Password confirmation form with symfony"
-tags = ["php", "twig", "symfony"]
+tags = ["php", "symfony"]
 
 +++
 

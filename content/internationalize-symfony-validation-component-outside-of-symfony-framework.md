@@ -2,7 +2,7 @@
 date = "2016-06-19T13:35:28+09:00"
 draft = false
 title = "Internationalize symfony validation component outside of symfony framework"
-tags = ["i18n", "php", "twig", "symfony"]
+tags = ["i18n", "php", "symfony"]
 
 +++
 
