@@ -53,7 +53,7 @@ Then it requests to Youtube search API with the data and find music.
 
 - *Find music outside user's prefernce list*  
 I think finding new music is a great joy.  
-It has a trick to find new music/artists with [Spotify's Related Artists API](https://developer.spotify.com/web-api/get-related-artists/).  
+This app has a trick to find new music/artists with [Spotify's Related Artists API](https://developer.spotify.com/web-api/get-related-artists/).  
 The API helps the app find other artists related to users' prefernce list.  
 
 - *Microsevices*  
@@ -62,7 +62,9 @@ It is built with *Ruby On Rails* and *php*.
 *php* is only used for facebook login part.  
 The other parts were developed with *Ruby On Rails*.  
 It was just because I wanted to develop with official facebook's php sdk.  
-Of course we can build facebook login with Rails adequately, and I know it's nonsense, but I just wanted to try it.  
+Of course we can build facebook login with Rails adequately.
+So it's nonsense, I know.  
+But I just wanted to try.  
 　  
 However, Looking back the development process, I didn't get much profits from it.  
 I wasted too much time for the jobs made from microsevices architecture.  
@@ -70,7 +72,7 @@ I wasted too much time for the jobs made from microsevices architecture.
 A lesson I got is that *microsevices* makes a lot of duplicated works.  
 I mean, If I implement model jobs like fetching records from MySql in Rails service, I should implement another same model jobs in php.  
 This made me feel like the code I should implement getting twice.  
-Besides, There is context switch, I think, when you move from php to rails and vice versa.  
+Besides, there was a context switch when I moved from php to rails and vice versa.  
 *Microsevices* might be a good architecture for scaling, though this app apparently doesn't need it.  
 Because this app is very small and just started.  
 
