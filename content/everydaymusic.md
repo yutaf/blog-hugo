@@ -26,15 +26,18 @@ Then notify you by email.
 #### Technical insights
 
 - *How it searches music*  
+　  
 The app knows users' prefernces from facebook likes or users' manual inputs.  
 Then it requests to Youtube search API with the data and find music.  
 
 - *Find music outside user's prefernce list*  
+　  
 I think finding new music is a great joy.  
 It has a trick to find new music/artists with [Spotify's Related Artists API](https://developer.spotify.com/web-api/get-related-artists/).  
 The API helps the app find other artists related to users' prefernce list.  
 
 - *Microsevices*  
+　  
 I tried microsevices for the first time with this app development.  
 It is built with *Ruby On Rails* and *php*.  
 *php* is only used for facebook login part.  
@@ -53,6 +56,7 @@ Besides, There is context switch, I think, when you move from php to rails and v
 Because this app is very small and just started.  
 
 - *[Sidekiq](http://sidekiq.org/)*  
+　  
 This is a great concurrency job tool offered by ruby gems.  
 It really makes concurrency implemention easier.  
 I used it for batch jobs sending emails to users.  
