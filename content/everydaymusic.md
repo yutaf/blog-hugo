@@ -26,7 +26,7 @@ February 2016
 
 #### Overview  
 This web app searches music you might prefer from youtube once a day.  
-Then notify you by email.  
+Then it notifies you of music it found by email.  
 
 #### github
 
