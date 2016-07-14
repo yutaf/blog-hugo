@@ -28,6 +28,11 @@ February 2016
 This web app searches music you might prefer from youtube once a day.  
 Then notify you by email.  
 
+#### github
+
+<https://github.com/yutaf/everydaymusic>  
+<https://github.com/yutaf/everydaymusic-facebook-service>  
+
 #### Technology stacks
 
 - DigitalOcean (IaaS)
@@ -39,11 +44,6 @@ Then notify you by email.
 - CoffeeScript
 - mysql 5.6
 - Redis
-
-#### github
-
-<https://github.com/yutaf/everydaymusic>  
-<https://github.com/yutaf/everydaymusic-facebook-service>  
 
 #### Technical insights
 
