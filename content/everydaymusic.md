@@ -25,8 +25,8 @@ tags = ["portfolio"]
 February 2016
 
 #### Overview  
-This web app searches music you might prefer from youtube once a day.  
-Then it notifies you of music it found by email.  
+This web app searches a music video you might prefer from youtube once a day.  
+Then it notifies you of the update by email.  
 
 #### github
 
