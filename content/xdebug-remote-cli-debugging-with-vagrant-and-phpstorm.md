@@ -63,7 +63,7 @@ lo        Link encap:Local Loopback
           RX bytes:948041 (948.0 KB)  TX bytes:948041 (948.0 KB)
 ```
 
-`10.0.2.2` is not there, but you can spcify the host of vm with it.  
+`10.0.2.2` is not there, but you can specify the host of vm with it.  
 <http://stackoverflow.com/questions/33777041/why-10-0-2-2-was-not-there-with-running-ifconfig>  
   
 "10.0.2.2 always points to the local host when you are running emulator or vm. So in virtual machine , it refers to the local host (127.0.0.1) as 10.0.2.2. That is the reason you can't see it in ifconfig in your host."  
