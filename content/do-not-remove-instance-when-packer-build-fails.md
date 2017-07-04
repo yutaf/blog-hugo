@@ -8,7 +8,7 @@ tags = ["packer", "aws", "ec2"]
 
 <!--more-->
 
-I want to run commands manually inside the instance for investigation when packer build fails.  
+I want to run commands manually inside the instance built by packer for investigation when packer build fails.  
 Packer remove the instance by default when the build fails.  
 We can change the behavior by `-on-error=abort` option.  
 
