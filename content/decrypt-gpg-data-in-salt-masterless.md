@@ -2,7 +2,7 @@
 draft = false
 date = "2017-07-05T10:49:38+09:00"
 title = "Decrypt gpg data in salt masterless"
-tags = ["salt"]
+tags = ["salt", "encryption"]
 
 +++
 
