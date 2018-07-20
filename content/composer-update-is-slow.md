@@ -87,6 +87,9 @@ Processor 2 GHz Intel Core i5
 Memory 8 GB 1867 MHz LPDDR3
 ```
 
+- Requirements  
+  - composer <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx>  
+
 I logged out Vagrant and executed the command in Vagrant synced folder on my Mac.  
 
 ```
